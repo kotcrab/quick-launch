@@ -1,0 +1,46 @@
+<!--
+  ~ Copyright 2016 See AUTHORS file.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<idea-plugin version="2">
+    <id>com.kotcrab.quicklaunch</id>
+    <name>Quick Launch</name>
+    <version>1.0</version>
+    <vendor url="https://www.kotcrab.com">Kotcrab</vendor>
+    <!--<vendor email="" url="http://www.kotcrab.com">Kotcrab</vendor>-->
+
+    <description><![CDATA[
+      Running launch configurations simplified
+    ]]></description>
+
+    <change-notes><![CDATA[
+      1.0
+       - Initial release
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Quick Launch" anchor="right" secondary="true" icon="AllIcons.Toolwindows.ToolWindowFavorites" factoryClass="com.kotcrab.quicklaunch.QuickLaunchToolWindowFactory"/>
+    </extensions>
+</idea-plugin>

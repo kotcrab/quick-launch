@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.kotcrab.quicklaunch.RunConfigSelectionDialog">
+  <grid id="cbd77" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="48" y="54" width="436" height="297"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="a8324">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="empty"/>
+        <children>
+          <component id="e053" class="com.kotcrab.quicklaunch.RunConfigList" binding="configList">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

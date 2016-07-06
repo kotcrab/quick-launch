@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.kotcrab.quicklaunch.QuickLaunchToolWindow">
+  <grid id="27dc6" binding="mainContent" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none">
+      <size top="3" left="3" bottom="0" right="3"/>
+    </border>
+    <children>
+      <component id="a11f4" class="com.kotcrab.quicklaunch.RunConfigList" binding="configList">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <selectionMode value="0"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
