@@ -18,7 +18,10 @@ package com.kotcrab.quicklaunch;
 
 import com.intellij.ui.components.JBList;
 
-import javax.swing.*;
+import javax.swing.DefaultListCellRenderer;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.ListCellRenderer;
 import javax.swing.border.EmptyBorder;
 import java.awt.Component;
 
@@ -30,7 +33,7 @@ public class RunConfigList extends JBList {
 		setBorder(new EmptyBorder(3, 3, 3, 3));
 	}
 
-	public static class RunConfigTitleListCellRenderer implements ListCellRenderer {
+	static class RunConfigTitleListCellRenderer implements ListCellRenderer {
 		protected DefaultListCellRenderer defaultRenderer = new DefaultListCellRenderer();
 
 		public Component getListCellRendererComponent (JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {

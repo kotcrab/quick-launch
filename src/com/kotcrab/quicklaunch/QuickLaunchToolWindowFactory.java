@@ -16,34 +16,12 @@
 
 package com.kotcrab.quicklaunch;
 
-import com.intellij.execution.ProgramRunnerUtil;
-import com.intellij.execution.RunManager;
-import com.intellij.execution.RunnerAndConfigurationSettings;
-import com.intellij.execution.executors.DefaultDebugExecutor;
-import com.intellij.execution.executors.DefaultRunExecutor;
-import com.intellij.icons.AllIcons;
-import com.intellij.openapi.actionSystem.ActionToolbarPosition;
-import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.ui.popup.JBPopupFactory;
 import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
-import com.intellij.ui.AnActionButton;
-import com.intellij.ui.AnActionButtonRunnable;
-import com.intellij.ui.ToggleActionButton;
-import com.intellij.ui.ToolbarDecorator;
 import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
 import org.jetbrains.annotations.NotNull;
-
-import javax.swing.DefaultListModel;
-import javax.swing.JPanel;
-import javax.swing.event.ListDataEvent;
-import javax.swing.event.ListDataListener;
-import java.awt.BorderLayout;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.util.ArrayList;
 
 /** @author Kotcrab */
 public class QuickLaunchToolWindowFactory implements ToolWindowFactory {
@@ -52,6 +30,5 @@ public class QuickLaunchToolWindowFactory implements ToolWindowFactory {
 		ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
 		final Content content = contentFactory.createContent(new QuickLaunchToolWindow(project).getMainContent(), "", false);
 		toolWindow.getContentManager().addContent(content);
-
 	}
 }

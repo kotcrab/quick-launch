@@ -41,7 +41,7 @@ public class Settings {
 	private void load () {
 		debugMode = properties.getBoolean(DEBUG_MODE);
 		String[] values = properties.getValues(FAVORITE_CONFIGS);
-		if(values != null) {
+		if (values != null) {
 			favoritesConfigs = new ArrayList<String>(Arrays.asList(values));
 		} else {
 			favoritesConfigs = new ArrayList<String>();

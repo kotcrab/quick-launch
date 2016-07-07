@@ -115,17 +115,17 @@ public class QuickLaunchToolWindow {
 		listModel.addListDataListener(new ListDataListener() {
 			@Override
 			public void intervalAdded (ListDataEvent e) {
-				saveFavRunConfigs();
+				saveFavorites();
 			}
 
 			@Override
 			public void intervalRemoved (ListDataEvent e) {
-				saveFavRunConfigs();
+				saveFavorites();
 			}
 
 			@Override
 			public void contentsChanged (ListDataEvent e) {
-				saveFavRunConfigs();
+				saveFavorites();
 			}
 		});
 	}
@@ -134,7 +134,7 @@ public class QuickLaunchToolWindow {
 		return mainContent;
 	}
 
-	private void saveFavRunConfigs () {
+	private void saveFavorites () {
 		ArrayList<String> savedModels = new ArrayList<String>();
 		for (Object obj : listModel.toArray()) {
 			RunConfigModel model = (RunConfigModel) obj;
