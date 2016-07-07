@@ -62,3 +62,4 @@ build/
 /target
 /target
 /target
+*.jar

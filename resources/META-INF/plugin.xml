@@ -22,7 +22,9 @@
     <!--<vendor email="" url="http://www.kotcrab.com">Kotcrab</vendor>-->
 
     <description><![CDATA[
-      Running launch configurations simplified
+    Quick Launch plugin lets you favorite run configurations and quickly access them from
+new tool window. This greatly help if you constantly need to change active run configuration in your project for example
+when you have separate configuration for server and application or a game and editor.
     ]]></description>
 
     <change-notes><![CDATA[
@@ -36,9 +38,7 @@
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
     <depends>com.intellij.modules.lang</depends>
-    -->
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="Quick Launch" anchor="right" secondary="true" icon="AllIcons.Toolwindows.ToolWindowFavorites" factoryClass="com.kotcrab.quicklaunch.QuickLaunchToolWindowFactory"/>
