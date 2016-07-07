@@ -7,6 +7,8 @@ when you have separate configuration for server and application or a game and ed
 
 ![quick-launch](http://dl.kotcrab.com/github/ql/quick-launch.png)
 
+Install from [JetBrains Plugin Repository](https://plugins.jetbrains.com/plugin/8464).
+
 #### Usage
 
 Press plus icon to open dialog and select run configurations you want to add to favorites. After adding you can double click any configuration to quickly launch it.
