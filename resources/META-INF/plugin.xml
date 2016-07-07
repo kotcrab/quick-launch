@@ -17,7 +17,7 @@
 <idea-plugin version="2">
     <id>com.kotcrab.quicklaunch</id>
     <name>Quick Launch</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor url="https://www.kotcrab.com">Kotcrab</vendor>
     <!--<vendor email="" url="http://www.kotcrab.com">Kotcrab</vendor>-->
 
