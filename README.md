@@ -1,6 +1,8 @@
 quick-launch
 ------------
 
+**Please note that this plugin is no longer maintained.**
+
 Quick Launch is an Intellij plugin that lets you favorite run configurations and quickly access them from
 new tool window. This greatly help if you constantly need to change active run configuration in your project for example
 when you have separate configuration for server and application or a game and editor. 
